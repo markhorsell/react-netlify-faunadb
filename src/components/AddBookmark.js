@@ -4,6 +4,7 @@ import BookmarkForm from './BookmarkForm';
 import { initiateAddBookmark } from '../actions/bookmarks';
 import Loader from './Loader';
 import useLoader from '../custom-hooks/useLoader';
+
 const AddBookmark = (props) => {
   const { isLoading, showLoader, hideLoader } = useLoader();
   const onSubmit = (bookmark) => {
@@ -15,7 +16,7 @@ const AddBookmark = (props) => {
   };
   return (
     <div>
-      <Loader show={isLoading}>Loading...</Loader>
+      <Loader show={isLoading}>Loading...ADD</Loader>
       <BookmarkForm {...props} onSubmit={onSubmit} />
     </div>
   );

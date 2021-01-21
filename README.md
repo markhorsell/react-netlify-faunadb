@@ -75,4 +75,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### https://dashboard.fauna.com/keys/@db/bookmark-manager
 ### https://levelup.gitconnected.com/create-a-bookmark-manager-app-using-faunadb-and-netlify-serverless-functions-7d4365652692
 ### https://app.netlify.com/teams/markhorsell/overview
+### http://localhost:8888/
+### https://priceless-swanson-aaa44d.netlify.app/
+
+### //  "dev": "netlify-lambda serve functions",??
 

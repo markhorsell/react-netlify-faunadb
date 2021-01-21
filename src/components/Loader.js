@@ -1,5 +1,12 @@
 import { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
+import styled from "styled-components";
+
+const LoaderWrapperDiv= styled.div`
+
+  background-color:orange;
+`;
+
 const Loader = (props) => {
   const [node] = useState(document.createElement('div'));
   const loader = document.querySelector('#loader');
@@ -8,13 +15,13 @@ const Loader = (props) => {
   }, [loader, node]);
   useEffect(() => {
     if (props.show) {
-      loader.classList.remove('hide');
-      document.body.classList.add('loader-open');
+      loader.style.display="block";
+
     } else {
-      loader.classList.add('hide');
-      document.body.classList.remove('loader-open');
+      loader.style.display="none";
+  
     }
   }, [loader, props.show]);
-  return ReactDOM.createPortal(props.children, node);
+  return ReactDOM.createPortal(<LoaderWrapperDiv>{props.children}</LoaderWrapperDiv> ,node);
 };
 export default Loader;

@@ -1,8 +1,17 @@
-import React from 'react';
-import { Button } from 'react-bootstrap';
+import React from "react";
+
+import styled from "styled-components";
+const Button = styled.button`
+  background-color: orange;
+`;
+const BookmarkDiv = styled.div`
+  border: 1px solid red;
+  flex:0 0 100%;
+  justify-content:space-between;
+`;
 const BookmarkItem = ({ _id, title, url, tag, handleEdit, handleDelete }) => {
   return (
-    <div className="bookmark">
+    <BookmarkDiv>
       <div>
         <div className="title">
           <strong>Title: </strong>
@@ -17,6 +26,7 @@ const BookmarkItem = ({ _id, title, url, tag, handleEdit, handleDelete }) => {
           {tag}
         </div>
       </div>
+
       <div className="buttons">
         <div className="btn">
           <Button
@@ -39,7 +49,7 @@ const BookmarkItem = ({ _id, title, url, tag, handleEdit, handleDelete }) => {
           </Button>
         </div>
       </div>
-    </div>
+    </BookmarkDiv>
   );
 };
 export default BookmarkItem;

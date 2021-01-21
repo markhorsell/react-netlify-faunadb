@@ -15,11 +15,13 @@ const EditBookmark = (props) => {
       props.history.push('/');
     });
   };
+  console.log("isLoading="+ isLoading.toString());
   return (
     <div>
       {!_.isEmpty(props.bookmark) ? (
         <React.Fragment>
           <Loader show={isLoading}>Loading...</Loader>
+          {isLoading.toString()}
           <BookmarkForm onSubmit={onSubmit} {...props} {...props.bookmark} />
         </React.Fragment>
       ) : (

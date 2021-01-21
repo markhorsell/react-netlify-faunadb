@@ -93,7 +93,8 @@ const Home = ({ bookmarksList, errorMsg, dispatch, history }) => {
         handleFilterClick={handleFilterClick}
       />
       {errorMsg && <p className="errorMsg">{errorMsg}</p>}
-      <Loader show={isLoading}>Loading...</Loader>
+      <Loader show={isLoading}>Loading...HOME</Loader>
+      {isLoading.toString()}
       {bookmarks.length > 0 ? (
         <BookmarkList
           bookmarks={bookmarks}

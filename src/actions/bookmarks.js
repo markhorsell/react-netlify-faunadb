@@ -30,6 +30,7 @@ export const initiateGetBookmarks = () => {
         url: '/api/getBookmarks',
         method: 'POST'
       });
+      console.log("setBookmarks - whenever data is pushed to server");
       return dispatch(setBookmarks(data));
     } catch (error) {
       error.response && dispatch(getErrors(error.response.data));

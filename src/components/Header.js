@@ -1,18 +1,37 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styled from "styled-components";
+const HeaderHeader = styled.header`
+width:100%;
+  display:flex;
+  background-color: pink;
+  flex:100%;
+  justify-content:center;
+  flex-wrap: nowrap;
+`;
+const NavLink = styled(Link)`
+  display:flex;
+ 
+  color:blue;
+  font-weight:800;
+ 
+
+`
+
 const Header = () => {
   return (
-    <header className="header">
-      <h1 className="main-heading">Bookmark Manager</h1>
-      <div className="header-links">
-        <Link to="/add" className="link">
+    <HeaderHeader>
+      <p>Remember to run 'netlify dev'</p>
+      <h1>Bookmark Manager</h1>
+     
+        <NavLink to="/add" >
           Add Bookmark
-        </Link>
-        <Link to="/" className="link">
+        </NavLink>
+        <NavLink to="/">
           Bookmarks List
-        </Link>
-      </div>
-    </header>
+        </NavLink>
+    
+    </HeaderHeader>
   );
 };
 export default Header;
