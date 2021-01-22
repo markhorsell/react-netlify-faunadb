@@ -24,6 +24,7 @@ export const deleteBookmark = (_id) => ({
   _id
 });
 export const initiateGetBookmarks = () => {
+  //Calling the Api which in turn makes a graphql request to the faunaDb graphQL API
   return async (dispatch) => {
     try {
       const { data } = await axios({

@@ -72,11 +72,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 -------------------------------------
-### https://dashboard.fauna.com/keys/@db/bookmark-manager
+### THIS IS VERY MUCH A WORK IN PROGRESS and is a refresher for me on best practice using redux, serverless node a distrubuted database with a GraphQL api, Typescript and Flexbox
+
+### Adapted from a tutorial by
 ### https://levelup.gitconnected.com/create-a-bookmark-manager-app-using-faunadb-and-netlify-serverless-functions-7d4365652692
-### https://app.netlify.com/teams/markhorsell/overview
-### http://localhost:8888/
+
+### to run locally 'netlify dev'
+### You will also need a free netlify account and a free faunadb account with your own faundadb secret ket
+
+### Deployed at
 ### https://priceless-swanson-aaa44d.netlify.app/
 
+### Deploys automatically via github action
+
 ### //  "dev": "netlify-lambda serve functions",??
+
+
+### React / Redux front end / rest api
+### (netlify) serverless express & node with apollo client for accessing faunadb using GraphQl
+
+### TODO styled-components / Typescript
+
+### https://dashboard.fauna.com/keys/@db/bookmark-manager
+### https://app.netlify.com/teams/markhorsell/overview
+### http://localhost:8888/
 
